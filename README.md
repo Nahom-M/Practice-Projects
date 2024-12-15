@@ -2,8 +2,15 @@
 
 A repository dedicated to practice some problems or following tutorials.
 
+Vite
+npm create vite@latest {my-project}
+
 Next.js
 npx create-next-app@latest {./}
+
+Tailwind
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 
 Aceternity
 npm i framer-motion clsx tailwind-merge
