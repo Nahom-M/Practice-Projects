@@ -86,4 +86,16 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  @font-face {
+    font-family: "Geist Mono";
+    src: url("/fonts/GeistMono-Regular.woff2") format("woff2"),
+      url("/fonts/GeistMono-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: "Geist Mono", monospace;
+  }
 }

@@ -15,3 +15,7 @@ npm i next-themes
 
 React-Icon
 npm i react-icons --save
+
+Other
+npm i react-lottie
+npm i --save-dev @types/react-lottie
