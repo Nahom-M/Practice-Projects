@@ -34,13 +34,7 @@ npm i react-icons --save
 Other
 npm i react-lottie
 npm i --save-dev @types/react-lottie
+npm i motion clsx tailwind-merge
+npm i motion clsx tailwind-merge three @react-three/fiber @types/three
 
-Animated Tabs
-Layout Grid
-Feature Sections
-Canvas Reveal
-
-Floating Navbar
-Moving Border
-Hover Border Gradient
-Glare Card
+Footer - Aurora
