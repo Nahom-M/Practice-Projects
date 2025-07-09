@@ -5,12 +5,10 @@ Godot Platformer
 */
 "use client";
 
-import { testimonials } from "../utils/globalData";
-
 const Projects = () => {
   return (
     <section className="p-6">
-      <h2 className="text-2xl font-bold text-center mb-6">My Grid Layout</h2>
+      <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
 
       {/* 2-column grid */}
       <div className="grid grid-cols-2 gap-4 mb-8">

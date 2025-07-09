@@ -13,7 +13,23 @@ export const testimonials = [
     designation: "Winter 2024",
     src: "https://nahom-others.s3.us-east-2.amazonaws.com/Winter+2024+Honour+Roll.jpeg",
   },
+  {
+    quote:
+      "An award given to those who have a term grade average point (TGPA) of 80% or greater for Fall 2024.",
+    name: "Dean's Honour Roll",
+    designation: "Fall 2024",
+    src: "https://nahom-others.s3.us-east-2.amazonaws.com/Fall+2024+Honour+Roll.jpg",
+  },
+  {
+    quote:
+      "An award given to those who have a term grade average point (TGPA) of 80% or greater for Winter 2025.",
+    name: "Dean's Honour Roll",
+    designation: "Winter 2025",
+    src: "https://nahom-others.s3.us-east-2.amazonaws.com/Winter+2025+Honour+Roll.jpg",
+  },
 ];
+
+//https://nahom-others.s3.us-east-2.amazonaws.com/Humber+Polytechnic+College+Diploma.pdf
 
 export const tabs = [
   {
