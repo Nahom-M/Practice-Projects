@@ -29,8 +29,6 @@ export const testimonials = [
   },
 ];
 
-//https://nahom-others.s3.us-east-2.amazonaws.com/Humber+Polytechnic+College+Diploma.pdf
-
 export const tabs = [
   {
     id: "Tab1",
