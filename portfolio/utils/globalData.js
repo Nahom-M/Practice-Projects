@@ -1,3 +1,5 @@
+export const backgroundText = "My name is Nahom Mesele, I studied at Humber Polytechnic Institute in Toronto, Canada, where I earned a diploma in Computer Programming. Throughout my time at Humber I have worked on many academic projects including developing applications using Java, the MERN stack, and cross-platform mobile development. In the past I have worked as a web developer for the Ethiopian Association, where I helped create a new website for the platform. I also helped with visitor technical inquiries and answered phone calls when other staff were unavailable."
+
 export const testimonials = [
   {
     quote:

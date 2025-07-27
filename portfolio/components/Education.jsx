@@ -9,20 +9,20 @@ const Education = () => {
     <section className="bg-gray-900 p-6 py-15 flex flex-col items-center text-center">
       <h1 className="text-white text-4xl font-bold mb-10">Education</h1>
       
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-10">
-        <p className="text-white text-lg max-w-md">
-          My diploma that I obtained at Humber Polytechnic
-        </p>
-        <Image
-          src="https://nahom-others.s3.us-east-2.amazonaws.com/Humber+Polytechnic+Diploma.jpg"
-          alt="Diploma Image"
-          width={500}
-          height={300}
-          className="rounded-lg"
-        />
+      <div className="flex flex-col md:flex-row items-center justify-center gap-30 my-5">
+        <div className="p-3 border-[12px] border-[#5c3a21] bg-[#f5f3ef] rounded-xl shadow-lg inline-block">
+          <Image
+            src="https://nahom-others.s3.us-east-2.amazonaws.com/Humber+Polytechnic+Diploma.jpg"
+            alt="Diploma Image"
+            width={450}
+            height={450}
+            className="rounded-lg"
+          />
+        </div>
+        <div>
+          <AnimatedTestimonials testimonials={testimonials} />
+        </div>
       </div>
-
-      <AnimatedTestimonials testimonials={testimonials} />
     </section>
   );
 };

@@ -1,10 +1,13 @@
-"use client";
+"use client";;
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 
 import { useEffect, useState } from "react";
 
-export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
+export const AnimatedTestimonials = ({
+  testimonials,
+  autoplay = false
+}) => {
   const [active, setActive] = useState(0);
 
   const handleNext = () => {
@@ -30,8 +33,9 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
     return Math.floor(Math.random() * 21) - 10;
   };
   return (
-    <div className="px-4 py-20 font-sans antialiased">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+    <div
+      className="">
+      <div className="relative gap-20">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -64,16 +68,14 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     duration: 0.4,
                     ease: "easeInOut",
                   }}
-                  className="absolute inset-0 origin-bottom"
-                >
+                  className="absolute inset-0 origin-bottom">
                   <img
                     src={testimonial.src}
                     alt={testimonial.name}
                     width={500}
                     height={500}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
-                  />
+                    className="h-full w-full rounded-3xl object-contain"/>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -97,8 +99,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
             transition={{
               duration: 0.2,
               ease: "easeInOut",
-            }}
-          >
+            }}>
             <h3 className="text-2xl font-bold text-black dark:text-white">
               {testimonials[active].name}
             </h3>
@@ -124,25 +125,24 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     ease: "easeInOut",
                     delay: 0.02 * index,
                   }}
-                  className="inline-block"
-                >
+                  className="inline-block">
                   {word}&nbsp;
                 </motion.span>
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 pt-12 md:pt-0 align-center justify-center">
             <button
               onClick={handlePrev}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
-            >
-              <IconArrowLeft className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
+              className="group/button flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
+              <IconArrowLeft
+                className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:rotate-12 dark:text-neutral-400" />
             </button>
             <button
               onClick={handleNext}
-              className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"
-            >
-              <IconArrowRight className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
+              className="group/button flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800">
+              <IconArrowRight
+                className="h-5 w-5 text-black transition-transform duration-300 group-hover/button:-rotate-12 dark:text-neutral-400" />
             </button>
           </div>
         </div>

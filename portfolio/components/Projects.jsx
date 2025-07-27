@@ -8,7 +8,7 @@ Godot Platformer
 const Projects = () => {
   return (
     <section className="p-6">
-      <h2 className="text-2xl font-bold text-center mb-6">Projects</h2>
+      <h1 className="text-2xl font-bold text-center mb-6">Recent Projects</h1>
 
       {/* 2-column grid */}
       <div className="grid grid-cols-2 gap-4 mb-8">
