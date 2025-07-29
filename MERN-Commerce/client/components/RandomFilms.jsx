@@ -6,7 +6,7 @@ const RandomFilms = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_SERVER_URL}/shows/random`)
+    fetch(`${import.meta.env.VITE_SERVER_URL}shows/random`)
       .then((response) => response.json())
       .then((data) => {
         setRandomFilms(data);
