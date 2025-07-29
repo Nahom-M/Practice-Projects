@@ -1,8 +1,0 @@
-{
-    "rewrtite": {
-        "source": [
-            "src/**/*"
-        ],
-        "destination": "/App.jsx"
-    }
-}
