@@ -10,7 +10,7 @@ const Products = () => {
 
   // Fetch all shows
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_SERVER_URL}/shows/list`)
+    fetch(`${import.meta.env.VITE_SERVER_URL}shows/list`)
       .then((response) => response.json())
       .then((data) => {
         setItems(data);

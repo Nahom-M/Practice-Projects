@@ -45,7 +45,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/users/login`,
+        `${import.meta.env.VITE_SERVER_URL}users/login`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

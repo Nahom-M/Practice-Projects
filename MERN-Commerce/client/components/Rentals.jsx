@@ -17,7 +17,7 @@ const Rentals = () => {
 
       try {
         const response = await fetch(
-          `${import.meta.env.VITE_SERVER_URL}/users/me`,
+          `${import.meta.env.VITE_SERVER_URL}users/me`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

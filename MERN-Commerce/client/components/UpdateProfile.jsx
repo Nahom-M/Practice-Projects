@@ -53,7 +53,7 @@ const UpdateProfile = () => {
     try {
       const token = localStorage.getItem("authToken");
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/users/update/${userId}`,
+        `${import.meta.env.VITE_SERVER_URL}users/update/${userId}`,
         {
           method: "PUT",
           headers: {

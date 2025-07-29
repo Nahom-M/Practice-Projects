@@ -14,7 +14,7 @@ const Cart = () => {
       return;
     }
 
-    fetch(`${import.meta.env.VITE_SERVER_URL}/users/me`, {
+    fetch(`${import.meta.env.VITE_SERVER_URL}users/me`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -51,7 +51,7 @@ const Cart = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/users/remove_cart/${movieId}`,
+        `${import.meta.env.VITE_SERVER_URL}users/remove_cart/${movieId}`,
         {
           method: "DELETE",
           headers: {
@@ -81,7 +81,7 @@ const Cart = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/users/checkout`,
+        `${import.meta.env.VITE_SERVER_URL}users/checkout`,
         {
           method: "PUT",
           headers: {

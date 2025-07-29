@@ -13,7 +13,7 @@ const Detail = () => {
   const isLoggedIn = !!token;
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_SERVER_URL}/shows/fetch/${id}`)
+    fetch(`${import.meta.env.VITE_SERVER_URL}shows/fetch/${id}`)
       .then((response) => response.json())
       .then((data) => {
         setShow(data);
@@ -50,7 +50,7 @@ const Detail = () => {
 
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_SERVER_URL}/users/update_cart`,
+        `${import.meta.env.VITE_SERVER_URL}users/update_cart`,
         {
           method: "PUT",
           headers: {
