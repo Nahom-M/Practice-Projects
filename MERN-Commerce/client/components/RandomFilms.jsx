@@ -38,7 +38,11 @@ const RandomFilms = () => {
                 variant="top"
                 src={film.image_link || "https://via.placeholder.com/300x200"}
                 alt={film.title}
-                height={250}
+                style={{
+                  height: "250px",
+                  width: "100%",
+                  objectFit: "cover",
+                }}
               />
               <Card.Body style={{ backgroundColor: "#fff5e2" }}>
                 <Card.Title>{film.title}</Card.Title>
