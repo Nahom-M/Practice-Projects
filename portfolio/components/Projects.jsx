@@ -1,34 +1,78 @@
-/*
-Modern Web
-Spring boot Test page
-Godot Platformer
-*/
 "use client";
+import { useState } from "react";
+import Link from "next/link";
+
+const projects = [
+  {
+    title: "Modern Web eCommerce",
+    description:
+      "A responsive MERN stack eCommerce platform with user auth, admin dashboard, shopping cart, and payment integration.",
+    image: "https://modern-web-ecommerce-client.vercel.app/cover.png",
+    link: "https://modern-web-ecommerce-client.vercel.app/",
+  },
+  {
+    title: "Godot Game Projects",
+    description:
+      "A collection of experimental 2D/3D games and prototypes built using the Godot engine. Focused on movement mechanics, UI, and basic AI.",
+    image: "https://raw.githubusercontent.com/godotengine/godot-website/master/static/img/godot-logo.svg",
+    link: "/godot-game",
+  },
+];
 
 const Projects = () => {
+  const [current, setCurrent] = useState(0);
+  const total = projects.length;
+
+  const handleNext = () => {
+    setCurrent((prev) => (prev + 1) % total);
+  };
+
+  const handlePrev = () => {
+    setCurrent((prev) => (prev - 1 + total) % total);
+  };
+
+  const { title, description, image, link } = projects[current];
+
   return (
-    <section className="p-6">
-      <h1 className="text-2xl font-bold text-center mb-6">Recent Projects</h1>
+    <section className="p-6 max-w-5xl mx-auto">
+      <h1 className="text-5xl font-bold text-center mb-12">Recent Projects</h1>
+      <Link href="/game" className="text-black hover:underline">
+        Play Game
+      </Link>
 
-      {/* 2-column grid */}
-      <div className="grid grid-cols-2 gap-4 mb-8">
-        <div className="bg-blue-100 p-4 rounded shadow">Item 1</div>
-        <div className="bg-blue-100 p-4 rounded shadow">Item 2</div>
+      <div className="relative flex flex-col md:flex-row items-center gap-20 transition-all duration-500">
+        <img
+          src={image}
+          alt={title}
+          className="w-full md:w-[70%] h-[400px] object-cover rounded-2xl border-2 shadow-xl"
+        />
+        <div className="md:w-[30%] text-center md:text-left">
+          <h2 className="text-3xl font-semibold mb-4">{title}</h2>
+          <p className="text-lg mb-6">{description}</p>
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-3 text-lg font-medium bg-gray-300 text-black rounded-lg hover:bg-gray-200 transition"
+          >
+            View Project
+          </a>
+        </div>
       </div>
 
-      {/* 3-column grid */}
-      <div className="grid grid-cols-3 gap-4 mb-8">
-        <div className="bg-green-100 p-4 rounded shadow">Item A</div>
-        <div className="bg-green-100 p-4 rounded shadow">Item B</div>
-        <div className="bg-green-100 p-4 rounded shadow">Item C</div>
-      </div>
-
-      {/* Responsive grid: 1 column on mobile, 2 on medium, 4 on large */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div className="bg-yellow-100 p-4 rounded shadow">Block 1</div>
-        <div className="bg-yellow-100 p-4 rounded shadow">Block 2</div>
-        <div className="bg-yellow-100 p-4 rounded shadow">Block 3</div>
-        <div className="bg-yellow-100 p-4 rounded shadow">Block 4</div>
+      <div className="flex justify-center mt-10 gap-6">
+        <button
+          onClick={handlePrev}
+          className="px-6 py-3 text-lg rounded bg-gray-700 text-white hover:bg-gray-600 transition"
+        >
+          ⬅ Previous
+        </button>
+        <button
+          onClick={handleNext}
+          className="px-6 py-3 text-lg rounded bg-gray-700 text-white hover:bg-gray-600 transition"
+        >
+          Next ➡
+        </button>
       </div>
     </section>
   );
