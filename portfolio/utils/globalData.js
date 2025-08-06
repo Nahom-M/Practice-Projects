@@ -12,7 +12,7 @@ export const projects = [
   {
     title: "Godot Game Projects",
     description:
-      "This is a sample game built using the Godot engine. It is an endless game where the player tries to get the highest score score whil avoiding the falling asteroids. Use WASD or arrow keys to move the player.",
+      "This is a sample game built using the Godot engine. It is an endless game where the player tries to get the highest score score whil avoiding the falling asteroids. Use WASD or arrow keys to move the player. *Game is not supported on mobile devices*.",
     image: "https://nahom-others.s3.us-east-2.amazonaws.com/ecommerce-img.png",
     link: "/game",
   },
