@@ -9,7 +9,7 @@ const Header = () => {
         alt="Profile"
         className="mx-auto w-100 h-100 rounded-full object-cover border-10 border-black-300"
       />
-      <div className="mt-5 text-2xl font-medium text-black-800">
+      <div className="mt-5 text-2xl font-medium text-black">
         Hello, my name is Nahom Mesele and I'm a recent Humber graduate from
         Computer Programming.
       </div>
