@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-white text-center p-6 mt-5 mb-5">
       <img
-        src="/nahom-picture.jpg"
+        src="/koolaid.webp"
         alt="Profile"
         className="mx-auto w-100 h-100 rounded-full object-cover border-10 border-black-300"
       />
