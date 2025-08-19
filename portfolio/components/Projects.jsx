@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <section className="p-6 max-w-7xl mx-auto">
-      <h1 className="text-5xl font-bold text-center mb-12">Recent Projects</h1>
+      <h1 className="text-5xl font-bold text-center my-10">Recent Projects</h1>
 
       <div
         className={`relative flex flex-col lg:flex-row items-center gap-12 transition-opacity duration-500 ${

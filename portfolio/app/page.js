@@ -8,7 +8,7 @@ import Experiences from "@/components/Experiences";
 
 export default function Home() {
   return (
-    <div>
+    <div id="main">
       <Navbar />
       <div id="header">
         <Header />

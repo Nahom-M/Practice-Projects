@@ -6,9 +6,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white p-4">
+    <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="text-xl font-bold">Nahom</div>
+        <button className="text-xl font-bold cursor-pointer" onClick={() => {window.scrollTo({ top: "#main", behavior: "smooth" }); window.history.replaceState(null, "", window.location.pathname); }}>Nahom's Portfolio</button>
 
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -38,11 +38,15 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul className={`md:flex space-x-6 ${isOpen ? "block" : "hidden"} md:block`}>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/projects">Projects</Link></li>
-          <li><Link href="/about">About</Link></li>
-          <li><Link href="/contact">Contact</Link></li>
+        <ul
+          className={`md:flex space-x-6 ${
+            isOpen ? "block" : "hidden"
+          } md:block`}
+        >
+          <li><Link href="#background">Background</Link></li>
+          <li><Link href="#projects">Projects</Link></li>
+          <li><Link href="#awards">Education</Link></li>
+          <li><Link href="#experiences">Experiences</Link></li>
         </ul>
       </div>
     </nav>

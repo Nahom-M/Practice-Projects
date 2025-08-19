@@ -51,13 +51,13 @@ export const testimonials = [
 
 export const experiences = [
   {
-    title: "Web Development",
+    title: "Ethiopian Association (GTA)",
     description:
-      "Created responsive and dynamic websites using React, TailwindCSS, and Node.js. Focused on clean UI and smooth UX.",
+      "Previously worked at the Ethiopian Association, where I helped develop responsive and dynamic websites using HTML5, CSS3, and JavaScript. Assisted visitors with their technological needs and other issues.",
   },
   {
     title: "Caring For Refugees",
     description:
-      "Designed and implemented Java and Python applications for automation, data visualization, and academic projects.",
+      "Volunteered to help maintain a WordPress website during its launch. Regularly updated plugins and documented any issues that arose.",
   },
 ]

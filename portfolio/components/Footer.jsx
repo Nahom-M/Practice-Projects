@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6 px-4 border-t-5 border-gray-800">
+    <footer className="bg-gray-900 text-white py-6 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-lg">&copy; {new Date().getFullYear()} Nahom Mesele. All rights reserved.</p>
         
