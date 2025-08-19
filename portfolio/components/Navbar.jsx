@@ -10,7 +10,6 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="text-xl font-bold">Nahom</div>
 
-        {/* Hamburger menu (mobile) */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             <svg
@@ -39,7 +38,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Menu items */}
         <ul className={`md:flex space-x-6 ${isOpen ? "block" : "hidden"} md:block`}>
           <li><Link href="/">Home</Link></li>
           <li><Link href="/projects">Projects</Link></li>

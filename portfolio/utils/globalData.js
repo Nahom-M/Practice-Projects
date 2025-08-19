@@ -48,3 +48,16 @@ export const testimonials = [
     src: "https://nahom-others.s3.us-east-2.amazonaws.com/Winter+2025+Honour+Roll.jpg",
   },
 ];
+
+export const experiences = [
+  {
+    title: "Web Development",
+    description:
+      "Created responsive and dynamic websites using React, TailwindCSS, and Node.js. Focused on clean UI and smooth UX.",
+  },
+  {
+    title: "Caring For Refugees",
+    description:
+      "Designed and implemented Java and Python applications for automation, data visualization, and academic projects.",
+  },
+]
