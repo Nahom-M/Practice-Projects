@@ -9,7 +9,7 @@ const Education = () => {
     <section className="bg-gray-900 p-6 py-15 flex flex-col items-center text-center">
   <h1 className="text-white text-4xl font-bold mb-10">Education</h1>
 
-  <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 my-5">
+  <div className="flex flex-col xl:flex-row items-center justify-center gap-10 md:gap-20 my-5">
     
     <div className="p-3 border-[12px] border-[#5c3a21] bg-[#f5f3ef] rounded-xl shadow-lg inline-block max-w-[90vw]">
       <Image

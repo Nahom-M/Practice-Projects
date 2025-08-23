@@ -53,7 +53,7 @@ export const experiences = [
   {
     title: "Ethiopian Association (GTA)",
     description:
-      "Previously worked at the Ethiopian Association, where I helped develop responsive and dynamic websites using HTML5, CSS3, and JavaScript. Assisted visitors with their technological needs and other issues.",
+      "Previously worked at the Ethiopian Association, where I helped develop their responsive and dynamic website using HTML5, CSS3, and JavaScript. Assisted visitors with their technological needs and other issues.",
   },
   {
     title: "Caring For Refugees",
