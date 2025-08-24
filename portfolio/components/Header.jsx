@@ -1,7 +1,5 @@
 "use client";
 
-//nahom-picture.jpg
-//https://www.usatoday.com/gcdn/media/USATODAY/WiresImages/2013/04/12/54377a2a534fd80c2e0f6a7067007217-3_4.jpg
 const Header = () => {
   return (
     <header className="bg-white text-center p-6 mt-15 mb-5">

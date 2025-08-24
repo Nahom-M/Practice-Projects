@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 
@@ -8,7 +9,15 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white p-4 z-50 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
-        <button className="text-xl font-bold cursor-pointer hover:text-gray-400" onClick={() => {window.scrollTo({ top: "#main", behavior: "smooth" }); window.history.replaceState(null, "", window.location.pathname); }}>Nahom's Portfolio</button>
+        <button
+          className="text-xl font-bold cursor-pointer hover:text-gray-400"
+          onClick={() => {
+            window.scrollTo({ top: "#main", behavior: "smooth" });
+            window.history.replaceState(null, "", window.location.pathname);
+          }}
+        >
+          Nahom's Portfolio
+        </button>
 
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -43,10 +52,18 @@ const Navbar = () => {
             isOpen ? "block" : "hidden"
           } md:block`}
         >
-          <li className="hover:text-gray-400"><Link href="#background">Background</Link></li>
-          <li className="hover:text-gray-400"><Link href="#projects">Projects</Link></li>
-          <li className="hover:text-gray-400"><Link href="#awards">Education</Link></li>
-          <li className="hover:text-gray-400"><Link href="#experiences">Experiences</Link></li>
+          <li className="hover:text-gray-400">
+            <Link href="#background">Background</Link>
+          </li>
+          <li className="hover:text-gray-400">
+            <Link href="#projects">Projects</Link>
+          </li>
+          <li className="hover:text-gray-400">
+            <Link href="#awards">Education</Link>
+          </li>
+          <li className="hover:text-gray-400">
+            <Link href="#experiences">Experiences</Link>
+          </li>
         </ul>
       </div>
     </nav>

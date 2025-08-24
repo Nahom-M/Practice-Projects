@@ -7,10 +7,11 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-6 px-4">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-lg">&copy; {new Date().getFullYear()} Nahom Mesele. All rights reserved.</p>
-        
+        <p className="text-lg">
+          &copy; {new Date().getFullYear()} Nahom Mesele. All rights reserved.
+        </p>
+
         <div className="flex gap-5">
-          {/* GitHub */}
           <a
             href="https://github.com/Nahom-M?tab=repositories"
             target="_blank"
@@ -21,7 +22,6 @@ const Footer = () => {
             <FaGithub className="h-15 w-15" />
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/nahommesele/"
             target="_blank"
@@ -32,7 +32,6 @@ const Footer = () => {
             <FaLinkedin className="h-15 w-15" />
           </a>
 
-          {/* Email */}
           <a
             href="mailto:nahommese@gmail.com"
             aria-label="Email"
