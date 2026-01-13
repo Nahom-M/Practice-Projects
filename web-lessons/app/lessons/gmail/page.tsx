@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 // Gmail step-by-step scrollable page with black-square placeholders for images.
 // Replace each black <div> placeholder with an <img src="/path/to/your-image.jpg" alt="..." /> when you add screenshots.
@@ -6,52 +7,50 @@ import React from 'react'
 const steps = [
   {
     title: 'Step 1 — Open Gmail & Sign in',
-    desc: 'Go to gmail.com and sign in with your Google account. If you don\'t have an account, create one by clicking "Create account."'
+    desc: 'Go to gmail.com and sign in with your Google account. If you don\'t have an account, create one by clicking "Create account."',
+    image: '/gmail/step 1.png'
   },
   {
     title: 'Step 2 — Inbox Overview',
-    desc: 'This is your inbox. Your newest messages are at the top. Use the left sidebar to jump between Inbox, Sent, Drafts, and labels.'
+    desc: 'This is your inbox. Your newest messages are at the top. Use the left sidebar to jump between Inbox, Sent, Drafts, and labels.',
+    image: '/gmail/step 2.png'
   },
   {
     title: 'Step 3 — Compose an Email',
-    desc: 'Click the "Compose" button (usually top-left) to create a new email. Enter recipients, subject, and message body.'
+    desc: 'Click the "Compose" button (usually top-left) to create a new email. Enter recipients, subject, and message body.',
+    image: '/gmail/step 3.png'
   },
   {
-    title: 'Step 4 — Add Attachments',
-    desc: 'Use the paperclip or the attach button inside the compose window to attach files or photos to your email.'
+    title: 'Step 4 — Email Composition',
+    desc: 'When composing, there are 3 main fields: "To" for recipient email addresses, "Subject" for the email topic, and the large text area for your message.',
+    image: '/gmail/step 4.png'
   },
   {
-    title: 'Step 5 — Send & Undo Send',
-    desc: 'Click "Send" to send the email. If you need to undo, use the small "Undo" popup that appears right after sending (if enabled in Settings).'
+    title: 'Step 5 — Add Attachments',
+    desc: 'Use the paperclip or the attach button inside the compose window to attach files or photos to your email.',
+    image: '/gmail/step 5.png'
   },
   {
-    title: 'Step 6 — Search & Filters',
-    desc: 'Use the search bar at the top to quickly find emails. Click the down-arrow in the search box to open advanced search and create filters.'
+    title: 'Step 6 — Sending the Email',
+    desc: 'Once your email is ready, click the "Send" button at the bottom of the compose window to send it.',
+    image: '/gmail/step 6.png'
   },
   {
-    title: 'Step 7 — Labels & Organization',
-    desc: 'Create and apply labels to organize emails. You can also star important messages and archive ones you want to keep but not see in the Inbox.'
+    title: 'Step 7 — Labels',
+    desc: 'On the left sidebar, you can find labels like "Inbox," "Sent," and "Trash." Click on them to filter your emails.',
+    image: '/gmail/step 7.png'
   },
-  {
-    title: 'Step 8 — Settings & Signature',
-    desc: 'Open Settings (gear icon) to change theme, enable/disable features like conversation view, or add a signature that appears at the bottom of outgoing messages.'
-  },
-  {
-    title: 'Step 9 — Mobile App',
-    desc: 'Install the Gmail app on iOS or Android for on-the-go access. Most desktop features exist in the app with slightly different UI.'
-  },
-  {
-    title: 'Step 10 — Keyboard Shortcuts',
-    desc: 'Enable keyboard shortcuts in Settings to speed up navigation and actions. Common shortcuts include "c" to compose, "e" to archive, and "r" to reply.'
-  }
 ]
 
 const Page = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-3xl mx-auto px-4">
+        <Link href="/">
+          <p className="text-blue-600 hover:underline mb-6 inline-block">← Back</p>
+        </Link>
+
         <h1 className="text-4xl font-bold mb-2 text-center">How to use Gmail — Step by step</h1>
-        <p className="text-center text-gray-600 mb-8">Scroll from top to bottom. Replace the black squares with your screenshots when ready.</p>
 
         <ol className="space-y-8">
           {steps.map((s, idx) => (
@@ -65,17 +64,13 @@ const Page = () => {
                   <h2 className="text-xl font-semibold mb-2">{s.title}</h2>
                   <p className="text-gray-700 mb-4">{s.desc}</p>
 
-                  <div className="w-full h-48 md:h-64 bg-black rounded-md" />
+                  <img src={s.image} alt={s.title} className="w-full rounded-md" />
 
                 </div>
               </div>
             </li>
           ))}
         </ol>
-
-        <p className="text-sm text-gray-500 mt-8">Tip: to add an image, replace the black placeholder with:<br />
-          <code className="block bg-gray-100 rounded px-2 py-1 mt-1">&lt;img src="/uploads/your-screenshot.png" alt="Step description" className="w-full rounded-md" /&gt;</code>
-        </p>
       </div>
     </div>
   )
