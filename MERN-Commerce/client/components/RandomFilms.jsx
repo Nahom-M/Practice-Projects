@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Card, Row, Col, Button, Spinner } from "react-bootstrap";
 
+import { Link } from "react-router-dom";
+
 const RandomFilms = () => {
   const [randomFilms, setRandomFilms] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -49,9 +51,19 @@ const RandomFilms = () => {
                 <Card.Text>
                   <strong>Type:</strong> {film.type}
                 </Card.Text>
+                <Button
+                  as={Link}
+                  to="/products"
+                  variant="dark"
+                >
+                  View Products
+                </Button>
+
+                {/*
                 <Button variant="dark" href={`/prod/${film._id}`}>
                   View Details
                 </Button>
+                */}
               </Card.Body>
             </Card>
           </Col>
